@@ -1,3 +1,3 @@
 FROM scratch
-ADD rootfs.tar.xz /
+ADD https://github.com/twhtanghk/arm/raw/master/armbian/rootfs.tar.xz /
 CMD ["bash"]
