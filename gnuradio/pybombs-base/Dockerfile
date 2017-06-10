@@ -1,4 +1,4 @@
-FROM twhtanghk/arm-python
+FROM twhtanghk/arm-python:dev
 RUN apt-get update \
 &&  apt-get install -y python-apt git wget sudo \
 &&  pip install PyBOMBS \
