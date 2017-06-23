@@ -1,0 +1,9 @@
+version: '2'
+services:
+  opencpn:
+    image: twhtanghk/arm-opencpn
+    volumes:
+      - ./data:/root
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=:0.0
