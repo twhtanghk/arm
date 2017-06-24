@@ -2,8 +2,11 @@ version: '2'
 services:
   opencpn:
     image: twhtanghk/arm-opencpn
+    privileged: true
     volumes:
+      - /dev/snd
+      - /run/user/1000/pulse/native:/run/user/0/pulse/native
       - ./data:/root
       - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
-      - DISPLAY=:0.0
+      - DISPLAY=unix$DISPLAY
