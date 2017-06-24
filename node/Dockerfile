@@ -1,4 +1,4 @@
-FROM twhtanghk/armbian:jessie
+FROM twhtanghk/arm-python:dev
 
 WORKDIR /usr/src/app
 
