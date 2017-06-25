@@ -1,4 +1,4 @@
-FROM twhtanghk/arm-python:dev
+FROM twhtanghk/arm-node
 
 WORKDIR /root
 
