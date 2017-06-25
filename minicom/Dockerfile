@@ -1,4 +1,4 @@
-FROM twhtanghk/arm-python
+FROM twhtanghk/armbian:jessie
 RUN apt-get update \
-&&  apt-get install -y python-dev \
+&&  apt-get install -y minicom \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
