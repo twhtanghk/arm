@@ -1,0 +1,9 @@
+version: '2'
+services:
+  zygrib:
+    image: twhtanghk/arm-zygrib
+    volumes:
+      - ./data:/root
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=unix$DISPLAY
