@@ -7,6 +7,7 @@ services:
       - /dev/snd
       - /run/user/1000/pulse/native:/run/user/0/pulse/native
       - ./data:/root
+      - ./data/base/gshhs:/usr/local/share/opencpn/gshhs
       - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
       - DISPLAY=unix$DISPLAY
