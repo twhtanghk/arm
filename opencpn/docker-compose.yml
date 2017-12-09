@@ -3,8 +3,10 @@ services:
   opencpn:
     image: twhtanghk/arm-opencpn
     privileged: true
-    volumes:
+    devices:
+      - /dev/ttyUSB0
       - /dev/snd
+    volumes:
       - /run/user/1000/pulse/native:/run/user/0/pulse/native
       - ./data:/root
       - ./data/base/gshhs:/usr/local/share/opencpn/gshhs
